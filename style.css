@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, sans-serif;
+  padding-bottom: 60px;
+}
+
+.naslov {
+  font-family: 'Century Gothic', cursive;
+  color: #007bff;
+}
+
+.nav-link:hover {
+  color: #00ffcc !important;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
