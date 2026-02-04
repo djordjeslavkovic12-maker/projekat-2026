@@ -1,3 +1,4 @@
+<!-- Ana Grbić AI 2/2023, Đorđe Slavković AI 12/2023 -->
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -40,7 +41,7 @@
     <img src="slike/banja/banjalogo.png" alt="Vrnjačka Banja">
     <button class="btn btn-primary mt-3 infoBtn">Saznaj više</button>
 
- <!-- Dodatni opis -->
+    <!-- Dodatni opis -->
     <section class="mt-5">
       <h2>O Vrnjačkoj Banji</h2>
       <p>Vrnjačka Banja je jedno od najposećenijih turističkih mesta u Srbiji, poznata po lekovitim izvorima, prelepim parkovima i bogatoj istoriji. Nalazi se u centralnoj Srbiji i nudi savršen spoj prirode, zdravlja i kulture.</p>
@@ -48,57 +49,81 @@
       <p>Tokom leta, Vrnjačka Banja postaje centar kulturnih događaja, sa festivalima, koncertima i izložbama. Zimi, mirna atmosfera i termalni izvori pružaju savršen odmor od svakodnevnog stresa.</p>
     </section>
 
-
     <!-- Galerija slika -->
     <div class="row mt-5">
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja1.jpg" target="_blank">
-            <img src="slike/banja/banja1.jpg" class="card-img-top img-fluid" alt="Banja 1">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja1.jpg" class="card-img-top img-fluid thumb" alt="Banja 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja1.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja2.jpg" target="_blank">
-            <img src="slike/banja/banja2.jpg" class="card-img-top img-fluid" alt="Banja 2">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja2.jpg" class="card-img-top img-fluid thumb" alt="Banja 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja2.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja3.jpg" target="_blank">
-            <img src="slike/banja/banja3.jpg" class="card-img-top img-fluid" alt="Banja 3">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja3.jpg" class="card-img-top img-fluid thumb" alt="Banja 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja3.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja4.jpg" target="_blank">
-            <img src="slike/banja/banja4.jpg" class="card-img-top img-fluid" alt="Banja 4">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja4.jpg" class="card-img-top img-fluid thumb" alt="Banja 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja4.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja5.jpg" target="_blank">
-            <img src="slike/banja/banja5.jpg" class="card-img-top img-fluid" alt="Banja 5">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja5.jpg" class="card-img-top img-fluid thumb" alt="Banja 5" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja5.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <a href="slike/banja/banja6.jpg" target="_blank">
-            <img src="slike/banja/banja6.jpg" class="card-img-top img-fluid" alt="Banja 6">
-          </a>
+        <div class="gallery-item card h-100">
+          <img src="slike/banja/banja6.jpg" class="card-img-top img-fluid thumb" alt="Banja 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/banja/banja6.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title"></h5>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
+  <!-- Modal za uvećanu sliku -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="Uvećana slika">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer bg-dark text-white text-center">
     <p>Kontakt: turizam@srbija.rs</p>
+    <button id="scrollTopBtn" class="btn btn-secondary mt-2">Na vrh</button>
   </footer>
+
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

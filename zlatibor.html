@@ -1,3 +1,4 @@
+<!-- Ana Grbić AI 2/2023, Đorđe Slavković AI 12/2023 -->
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -53,54 +54,62 @@
       <h2>Galerija</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor1.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor1.jpg" class="card-img-top img-fluid" alt="Zlatibor 1">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor1.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 1"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor1.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor2.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor2.jpg" class="card-img-top img-fluid" alt="Zlatibor 2">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor2.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 2"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor2.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor3.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor3.jpg" class="card-img-top img-fluid" alt="Zlatibor 3">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor3.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 3"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor3.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor4.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor4.jpg" class="card-img-top img-fluid" alt="Zlatibor 4">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor4.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 4"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor4.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor5.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor5.jpg" class="card-img-top img-fluid" alt="Zlatibor 5">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor5.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 5"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor5.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/zlatibor/zlatibor6.jpg" target="_blank">
-              <img src="slike/zlatibor/zlatibor6.jpg" class="card-img-top img-fluid" alt="Zlatibor 6">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/zlatibor/zlatibor6.jpg" class="card-img-top img-fluid thumb" alt="Zlatibor 6"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/zlatibor/zlatibor6.jpg">
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Modal za uvećanu sliku -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="Uvećana slika">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer bg-dark text-white text-center">
     <p>Kontakt: turizam@srbija.rs</p>
+    <button id="scrollTopBtn" class="btn btn-secondary mt-2">Na vrh</button>
   </footer>
+
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

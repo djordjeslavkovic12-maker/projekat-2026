@@ -1,3 +1,4 @@
+<!-- Ana Grbić AI 2/2023, Đorđe Slavković AI 12/2023 -->
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -54,54 +55,62 @@
       <h2>Galerija</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis1.jpg" target="_blank">
-              <img src="slike/nis/nis1.jpg" class="card-img-top img-fluid" alt="Niš 1">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis1.jpg" class="card-img-top img-fluid thumb" alt="Niš 1"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis1.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis2.jpg" target="_blank">
-              <img src="slike/nis/nis2.jpg" class="card-img-top img-fluid" alt="Niš 2">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis2.jpg" class="card-img-top img-fluid thumb" alt="Niš 2"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis2.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis3.jpg" target="_blank">
-              <img src="slike/nis/nis3.jpg" class="card-img-top img-fluid" alt="Niš 3">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis3.jpg" class="card-img-top img-fluid thumb" alt="Niš 3"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis3.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis4.jpg" target="_blank">
-              <img src="slike/nis/nis4.jpg" class="card-img-top img-fluid" alt="Niš 4">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis4.jpg" class="card-img-top img-fluid thumb" alt="Niš 4"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis4.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis5.jpg" target="_blank">
-              <img src="slike/nis/nis5.jpg" class="card-img-top img-fluid" alt="Niš 5">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis5.jpg" class="card-img-top img-fluid thumb" alt="Niš 5"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis5.jpg">
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a href="slike/nis/nis6.jpg" target="_blank">
-              <img src="slike/nis/nis6.jpg" class="card-img-top img-fluid" alt="Niš 6">
-            </a>
+          <div class="card h-100 gallery-item">
+            <img src="slike/nis/nis6.jpg" class="card-img-top img-fluid thumb" alt="Niš 6"
+                 data-bs-toggle="modal" data-bs-target="#imageModal" data-img="slike/nis/nis6.jpg">
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Modal za uvećanu sliku -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="Uvećana slika">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer bg-dark text-white text-center">
     <p>Kontakt: turizam@srbija.rs</p>
+    <button id="scrollTopBtn" class="btn btn-secondary mt-2">Na vrh</button>
   </footer>
+
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

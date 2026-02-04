@@ -1,3 +1,4 @@
+/* Ana Grbić AI 2/2023, Đorđe Slavković AI 12/2023 */
 body {
   font-family: Verdana, sans-serif;
   padding-bottom: 60px;
@@ -19,8 +20,42 @@ body {
   padding: 10px;
 }
 
+#scrollTopBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#scrollTopBtn:hover {
+  background-color: #00ffcc;
+  color: black;
+}
+
 img {
   max-width: 100%;
   border-radius: 8px;
   margin-top: 15px;
+}
+
+/* Galerija */
+.gallery-item {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.thumb {
+  height: 
 }
